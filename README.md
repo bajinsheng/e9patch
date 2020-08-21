@@ -17,6 +17,11 @@ This should build two tools:
 Usage
 -----
 
+How to support multiple actions:
+
+    ./e9tool --action='addr=0x41af37:call _entry_fast(instrAddr)@e8afl' --action='addr=0x41b333:call _entry_fast(instrAddr)@e8afl' xmllint
+
+
 The `e9patch` tool is usable via the `e9tool` front-end.
 
 For example, to add instruction printing instrumentation to all `xor`
